@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:gravity="center">
+    <RelativeLayout
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_recipe"
+        android:gravity="center"
+        android:background="@drawable/black_border"
+        android:padding="8dp">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:id="@+id/ttt"
+            android:src="@drawable/paneer_butter_masala"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Paneer Butter Masala"
+            android:layout_below="@+id/ttt"
+            android:gravity="center"
+            android:fontFamily="@font/alegreya_bold"
+            android:id="@+id/recipe_text"
+            android:textColor="#000"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="#006400"
+            android:text="View More"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:id="@+id/view_more"
+            android:textSize="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/recipe_text"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

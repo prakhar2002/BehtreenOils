@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/green_border"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:text="You are not connected to internet please check your internet connection open app again"
+        android:fontFamily="@font/alegreya_bold"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:id="@+id/popup_image" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_below="@id/popup_image">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="close"
+        android:id="@+id/close"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        android:fontFamily="@font/alegreya_bold"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/green_button_background"/>
+</RelativeLayout>
+</RelativeLayout>

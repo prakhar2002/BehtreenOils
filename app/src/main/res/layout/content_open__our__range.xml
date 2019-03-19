@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Open_Our_Range"
+    android:layout_margin="10dp"
+    android:gravity="center"
+    tools:showIn="@layout/app_bar_open__our__range">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recipe_image_layout">
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/range_image"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/our_story"
+               android:layout_below="@id/recipe_image_layout"
+                android:layout_marginBottom="4dp"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:src="@drawable/title_img"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textSize="25dp"
+                        android:text="Product Info"
+
+                        android:fontFamily="@font/alegreya_bold"
+                        android:id="@+id/range_text_"
+                        android:textColor="#000"
+                        android:textStyle="bold"/></RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/our_story"
+                android:background="@drawable/black_border">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_gravity="center_vertical|end"
+                    android:text=""
+                    android:textAlignment="gravity"
+                    android:fontFamily="@font/alegreya_bold"
+                    android:textColor="#000"
+                    android:id="@+id/range_inside_text_"
+                    android:layout_margin="10dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/range_inside_text_"
+                    android:gravity="center"
+                    android:layout_marginBottom="15dp">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/green_border"
+                        android:text="View More"
+                        android:textColor="#000"
+                        android:textAllCaps="false"
+                        android:id="@+id/view_more_"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

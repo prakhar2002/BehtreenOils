@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Open_Recipe"
+    android:padding="10dp"
+    tools:showIn="@layout/app_bar_open__recipe">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/our_story"
+                android:layout_marginBottom="4dp"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:src="@drawable/title_img"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textSize="25dp"
+                        android:text="Product Info"
+
+                        android:fontFamily="@font/alegreya_bold"
+                        android:id="@+id/recipe_text"
+                        android:textColor="#000"
+                        android:textStyle="bold"/></RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recipe_image_layout"
+                android:layout_below="@id/our_story">
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/recipe_image"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_inside_Ingredients"
+                android:padding="10dp"
+                android:background="@drawable/black_border"
+                android:layout_below="@id/Ingredients_">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:text="hello"
+                    android:fontFamily="@font/alegreya_bold"
+
+                    android:id="@+id/recipe_recipes_" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Ingredients_"
+                android:layout_below="@+id/recipe_image_layout"
+                android:layout_marginBottom="4dp"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:src="@drawable/title_img"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textSize="25dp"
+                        android:text="Ingredients"
+
+                        android:fontFamily="@font/alegreya_bold"
+                        android:id="@+id/ingredients"
+                        android:textColor="#000"
+                        android:textStyle="bold"/></RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Methods_"
+                android:layout_marginBottom="4dp"
+                android:layout_below="@+id/text_inside_Ingredients"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:src="@drawable/title_img"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textSize="25dp"
+                        android:text="Recipe Method"
+
+                        android:fontFamily="@font/alegreya_bold"
+                        android:id="@+id/Method"
+                        android:textColor="#000"
+                        android:textStyle="bold"/></RelativeLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_inside_Method"
+                android:padding="10dp"
+                android:background="@drawable/black_border"
+                android:layout_below="@id/Methods_">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:text="hello"
+                    android:fontFamily="@font/alegreya_bold"
+                    android:id="@+id/method_text"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

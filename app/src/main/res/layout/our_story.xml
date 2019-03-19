@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/our_story"
+            android:layout_marginBottom="4dp"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:src="@drawable/title_img"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25dp"
+                    android:text="Our Story"
+
+                    android:fontFamily="@font/alegreya_bold"
+                    android:textColor="#000"
+                    android:textStyle="bold"/></RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:id="@+id/zzzz"
+            android:layout_below="@id/our_story"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ess_tee_agro_logo_100x100"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/mmmm"
+            android:gravity="center"
+            android:background="@drawable/black_border"
+            android:layout_marginBottom="4dp"
+            android:layout_below="@+id/zzzz"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/qqqq"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/alegreya_bold"
+                android:gravity="center"
+                android:text="The Ess Tee Agro Oils Pvt Ltd, was founded in 2018 in Delhi by a group of successful entrepreneurs, corporate executives, and senior professionals. We aim to create healthy cooking medium category by focusing on Behtreen Yellow mustard oil."
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:gravity="center"
+                android:background="#fff"
+                android:layout_below="@+id/qqqq"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Read More"
+                    android:id="@+id/readmore"
+
+                    android:fontFamily="@font/alegreya_bold"
+                    android:textAllCaps="false"
+                    android:background="@drawable/green_border"
+                    android:textColor="#006400"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rrrrr"
+            android:gravity="center"
+            android:layout_below="@id/mmmm">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:src="@drawable/title_img"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Our Range"
+                    android:fontFamily="@font/alegreya_bold"
+                    android:textColor="#000"
+                    android:textStyle="bold"/></RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/aaaa"
+            android:layout_below="@id/rrrrr">
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/our_range__view"
+                android:nestedScrollingEnabled="false"
+                android:scrollbars="none">
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+</RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_recipe"
+        android:gravity="center"
+        android:padding="8dp">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:id="@+id/popup_image"
+            android:scaleType="fitXY"
+            android:src="@drawable/paneer_butter_masala"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

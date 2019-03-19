@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fading_text">
+        <item>"Healthy Chunoge, Healthy Rahoge"</item>
+    </string-array>
+    <string-array name="fading_text1">
+        <item>Make Your Winter Special With Puri Sabji</item>
+        <item>Care For Your Health</item>
+        <item>Enjoy Hot Snacks Cooked</item>
+    </string-array>
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Contact"
+    tools:showIn="@layout/app_bar_contact">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/our_story"
+                android:layout_marginBottom="4dp"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:src="@drawable/title_img"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textSize="25dp"
+                        android:text="Contact"
+                        android:fontFamily="@font/alegreya_bold"
+                        android:textColor="#000"
+                        android:textStyle="bold"/></RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="16dp"
+                android:layout_below="@+id/our_story"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/icon_behtreen_oil"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/green_border"
+                    android:nestedScrollingEnabled="false"
+                    android:scrollbars="none"></android.support.v7.widget.RecyclerView>
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/username"
+                    android:layout_marginTop="10dp"
+                    app:met_floatingLabel="normal"
+                    android:hint="Name"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phonenumber"
+                    android:layout_marginTop="10dp"
+                    android:inputType="number"
+                    app:met_floatingLabel="normal"
+                    android:hint="Mobile Number"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/email"
+                    android:inputType="textEmailAddress"
+                    android:layout_marginTop="10dp"
+                    app:met_floatingLabel="normal"
+                    android:hint="Email"/>
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/details"
+                    android:inputType="textMultiLine"
+                    android:layout_marginTop="10dp"
+                    app:met_floatingLabel="normal"
+                    android:gravity="start"
+                    android:hint="Your Message"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Send"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/btn_Register"
+                    android:textColor="#fff"
+                    android:background="@drawable/green_button_background"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
